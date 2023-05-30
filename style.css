@@ -1,0 +1,55 @@
+body{
+    margin-top:150px;
+/*    background-color:rgb(0, 124, 128);*/
+    color:white;
+    background-image: url("image.jpg");
+
+}
+.email{
+    margin-top:50px;
+
+}
+.password{
+    margin-top:25px;
+
+}
+.button{
+    margin-top:50px;
+
+
+
+
+}
+.button input:hover{
+    color:red;
+
+}
+.button input{
+      background-color:lightskyblue;
+      width: 260px;
+    height:30px;
+}
+
+    #p2{
+    color:lightblue;
+   
+    margin-left:400px;
+
+    }
+    #p1{
+        margin-left:250px;
+    }
+
+.email input{
+    width: 260px;
+    height:30px;
+      
+    border-color:mediumblue;
+
+
+    }
+.password input{
+    width: 260px;
+    border-color:mediumblue;
+    height:30px;
+}

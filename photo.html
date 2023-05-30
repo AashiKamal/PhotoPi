@@ -1,0 +1,132 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memories</title>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="photo.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">>
+
+        
+        
+    </head>
+    <body>
+        <audio controls autoplay loop>
+            <source src="song.mp3" type="audio/mp3">
+        </audio>
+        <header>
+            <nav>
+                <div class="logo">
+                    photo<span>pi</span>X
+
+                </div>
+                <div class="menu">
+                    <a href="#">HOME</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="#">GALLERY</a>
+                    <a href="#">CONTACT</a>
+                </div>
+                <div class="icon">
+                    
+                    <i class="fa fa-search"></i>
+                    <a href="test.html">Login</a>
+                </div>
+            </nav>
+
+            <section class="h-text">
+                    <i class="fa fa-camera" id="camera"></i>
+                    <h1 data-aos="zoom-out-up">Capturing the moments that captive your heart</h1>
+                    <input type="text" name="" placeholder="Search Here!!">
+                <button>
+                    <i class="fa fa-search"></i>
+                </button>
+            </section>
+        </header>
+
+
+        <section class="filter-gallery">
+            <div class="portfolio-menu">
+                <ul>
+                    <li class="active" data-filter="*"> All</li>
+                    <li data-filter=".nature">Nature</li>
+                    <li data-filter=".animal">Animal</li>
+                    <li data-filter=".travel">Travel</li>
+                </ul>
+            </div>
+
+
+            <div class="portfolio-item">
+                <div class="item nature" data-aos="flip-left" data-aos-offset="100" data-aos-delay="100">
+                    <img src="n1.jpg" width="100" height="100">
+                </div>
+                <div class="item animal" data-aos="flip-left" data-aos-offset="100" data-aos-delay="300">
+                    <img src="a1.jpg" width="100" height="100">
+                </div>
+                <div class="item travel" data-aos="flip-left" data-aos-offset="100" data-aos-delay="600">
+                    <img src="t1.jpg" width="100" height="100">
+                </div>
+                <div class="item nature" data-aos="flip-left" data-aos-offset="100" data-aos-delay="100">
+                    <img src="n2.jpg" width="100" height="100">
+                </div>
+                <div class="item animal" data-aos="flip-left" data-aos-offset="100" data-aos-delay="300">
+                    <img src="a2.jpg" width="100" height="100">
+                </div>
+                <div class="item travel" data-aos="flip-left" data-aos-offset="100" data-aos-delay="600">
+                    <img src="t2.jpg" width="100" height="100">
+                </div>
+                <div class="item nature" data-aos="flip-left" data-aos-offset="100" data-aos-delay="100">
+                    <img src="n3.jpg" width="100" height="100">
+                </div>
+                <div class="item animal" data-aos="flip-left" data-aos-offset="100" data-aos-delay="300">
+                    <img src="a3.jpg" width="100" height="100">
+                </div>
+                <div class="item travel" data-aos="flip-left" data-aos-offset="100" data-aos-delay="600">
+                    <img src="t3.jpg" width="100" height="100">
+                </div>
+                
+
+                
+
+            </div>
+        
+        </section>
+    
+        <section class ="member">
+            <div class="member-info">
+                <h1>Our<span>Information</span></h1>
+                <p>What our Member Says</p>
+
+            </div>
+        </section>
+
+        
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <script type ="text/javascript">
+            $('.portfolio-item').isotope({
+                itemSelector: '.item',
+                layoutMode: 'fitRows'
+            });
+                $(".portfolio-menu ul li").click(function(){
+                $(".portfolio-menu ul li").removeClass("active");
+                $(this).addClass("active");
+                var selector= $(this).attr("data-filter");
+                $(".portfolio-item").isotope({
+                    filter:selector
+                });
+                return false;
+
+            });
+        </script>
+        
+
+    </body>
+</html>

@@ -1,0 +1,11 @@
+body{
+    background-image: url("aboutbg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    
+    font-weight:800;
+font-style:italic;
+color:brown;
+}
+
